@@ -1,0 +1,9 @@
+C:\Users\PcHiden\Desktop\proyecto c#\LibConexionBD\LibConexionBD\bin\Debug\LibConexionBD.dll
+C:\Users\PcHiden\Desktop\proyecto c#\LibConexionBD\LibConexionBD\bin\Debug\LibConexionBD.pdb
+C:\Users\PcHiden\Desktop\proyecto c#\LibConexionBD\LibConexionBD\bin\Debug\LibParametro.dll
+C:\Users\PcHiden\Desktop\proyecto c#\LibConexionBD\LibConexionBD\bin\Debug\LibParametro.pdb
+C:\Users\PcHiden\Desktop\proyecto c#\LibConexionBD\LibConexionBD\obj\Debug\LibConexionBD.csprojAssemblyReference.cache
+C:\Users\PcHiden\Desktop\proyecto c#\LibConexionBD\LibConexionBD\obj\Debug\LibConexionBD.csproj.CoreCompileInputs.cache
+C:\Users\PcHiden\Desktop\proyecto c#\LibConexionBD\LibConexionBD\obj\Debug\LibConexionBD.csproj.CopyComplete
+C:\Users\PcHiden\Desktop\proyecto c#\LibConexionBD\LibConexionBD\obj\Debug\LibConexionBD.dll
+C:\Users\PcHiden\Desktop\proyecto c#\LibConexionBD\LibConexionBD\obj\Debug\LibConexionBD.pdb

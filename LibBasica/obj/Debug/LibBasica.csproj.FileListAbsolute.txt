@@ -1,0 +1,24 @@
+c:\users\ceguja\documents\visual studio 2010\Projects\LibBasica\LibBasica\bin\Debug\LibBasica.xml
+c:\users\ceguja\documents\visual studio 2010\Projects\LibBasica\LibBasica\bin\Debug\LibBasica.dll
+c:\users\ceguja\documents\visual studio 2010\Projects\LibBasica\LibBasica\bin\Debug\LibBasica.pdb
+c:\users\ceguja\documents\visual studio 2010\Projects\LibBasica\LibBasica\obj\Debug\ResolveAssemblyReference.cache
+c:\users\ceguja\documents\visual studio 2010\Projects\LibBasica\LibBasica\obj\Debug\LibBasica.dll
+c:\users\ceguja\documents\visual studio 2010\Projects\LibBasica\LibBasica\obj\Debug\LibBasica.pdb
+C:\LibBasicaProyV4\LibBasica\bin\Debug\LibBasica.dll
+C:\LibBasicaProyV4\LibBasica\bin\Debug\LibBasica.pdb
+C:\LibBasicaProyV4\LibBasica\obj\Debug\ResolveAssemblyReference.cache
+C:\LibBasicaProyV4\LibBasica\obj\Debug\LibBasica.dll
+C:\LibBasicaProyV4\LibBasica\obj\Debug\LibBasica.pdb
+C:\LibBasicaProyV4DS\LibBasica\bin\Debug\LibBasica.dll
+C:\LibBasicaProyV4DS\LibBasica\bin\Debug\LibBasica.pdb
+C:\LibBasicaProyV4DS\LibBasica\obj\Debug\ResolveAssemblyReference.cache
+C:\LibBasicaProyV4DS\LibBasica\obj\Debug\LibBasica.dll
+C:\LibBasicaProyV4DS\LibBasica\obj\Debug\LibBasica.pdb
+C:\LibBasicaProyV4DS\LibBasica\bin\Debug\LibBasica.xml
+C:\Users\PcHiden\Desktop\proyecto c#\LibBasica\bin\Debug\LibBasica.xml
+C:\Users\PcHiden\Desktop\proyecto c#\LibBasica\bin\Debug\LibBasica.dll
+C:\Users\PcHiden\Desktop\proyecto c#\LibBasica\bin\Debug\LibBasica.pdb
+C:\Users\PcHiden\Desktop\proyecto c#\LibBasica\obj\Debug\LibBasica.csprojAssemblyReference.cache
+C:\Users\PcHiden\Desktop\proyecto c#\LibBasica\obj\Debug\LibBasica.csproj.CoreCompileInputs.cache
+C:\Users\PcHiden\Desktop\proyecto c#\LibBasica\obj\Debug\LibBasica.dll
+C:\Users\PcHiden\Desktop\proyecto c#\LibBasica\obj\Debug\LibBasica.pdb

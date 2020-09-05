@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ApliwebAgenviaje.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ApliwebAgenviaje_localhost_LNAgenciaviaje" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:60059/LNAgenciaviaje.asmx</Value>
+    </Setting>
+    <Setting Name="ApliwebAgenviaje_com_somee_serviceshotel_WServiceHotel" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://serviceshotel.somee.com/WServiceHotel.asmx</Value>
+    </Setting>
+    <Setting Name="ApliwebAgenviaje_com_somee_hotelvalparaiso_HotelWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://hotelvalparaiso.somee.com/HotelWS.asmx</Value>
+    </Setting>
+    <Setting Name="ApliwebAgenviaje_com_somee_agenciaviajeabjsanti_AgenciaViajeLAB_SCSJ" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://agenciaviajeabjsanti.somee.com/AgenciaViajeLAB_SCSJ.asmx</Value>
+    </Setting>
+    <Setting Name="ApliwebAgenviaje_com_somee_webservicesautos_www_WebServiceAUTOS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.webservicesautos.somee.com/WebServiceAUTOS.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

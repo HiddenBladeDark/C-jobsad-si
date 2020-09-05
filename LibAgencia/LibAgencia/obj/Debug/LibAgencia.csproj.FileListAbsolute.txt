@@ -1,0 +1,15 @@
+C:\Users\PcHiden\Desktop\proyecto c#\LibAgencia\LibAgencia\bin\Debug\LibAgencia.dll
+C:\Users\PcHiden\Desktop\proyecto c#\LibAgencia\LibAgencia\bin\Debug\LibAgencia.pdb
+C:\Users\PcHiden\Desktop\proyecto c#\LibAgencia\LibAgencia\bin\Debug\LibConexionBD.dll
+C:\Users\PcHiden\Desktop\proyecto c#\LibAgencia\LibAgencia\bin\Debug\LibLlenarCombos.dll
+C:\Users\PcHiden\Desktop\proyecto c#\LibAgencia\LibAgencia\bin\Debug\LibLlenarGrids.dll
+C:\Users\PcHiden\Desktop\proyecto c#\LibAgencia\LibAgencia\bin\Debug\LibParametro.dll
+C:\Users\PcHiden\Desktop\proyecto c#\LibAgencia\LibAgencia\bin\Debug\LibConexionBD.pdb
+C:\Users\PcHiden\Desktop\proyecto c#\LibAgencia\LibAgencia\bin\Debug\LibLlenarCombos.pdb
+C:\Users\PcHiden\Desktop\proyecto c#\LibAgencia\LibAgencia\bin\Debug\LibLlenarGrids.pdb
+C:\Users\PcHiden\Desktop\proyecto c#\LibAgencia\LibAgencia\bin\Debug\LibParametro.pdb
+C:\Users\PcHiden\Desktop\proyecto c#\LibAgencia\LibAgencia\obj\Debug\LibAgencia.csproj.CoreCompileInputs.cache
+C:\Users\PcHiden\Desktop\proyecto c#\LibAgencia\LibAgencia\obj\Debug\LibAgencia.csproj.CopyComplete
+C:\Users\PcHiden\Desktop\proyecto c#\LibAgencia\LibAgencia\obj\Debug\LibAgencia.dll
+C:\Users\PcHiden\Desktop\proyecto c#\LibAgencia\LibAgencia\obj\Debug\LibAgencia.pdb
+C:\Users\PcHiden\Desktop\proyecto c#\LibAgencia\LibAgencia\obj\Debug\LibAgencia.csprojAssemblyReference.cache

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Conexion>
+  <Servidor>DESKTOP-43HS9U3\SQLEXPRESS</Servidor>
+  <BaseDatos>Practica</BaseDatos>
+  <Usuario></Usuario>
+  <Password></Password>
+</Conexion>

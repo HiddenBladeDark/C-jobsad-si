@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="LibBasica.clsCombos" Collapsed="true">
+    <Position X="8.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gABqACAAAAAAAAAggIAAAIAQkAAAAAAIAIAAAAoAQAA=</HashCode>
+      <FileName>clsCombos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibBasica.clsConexBd">
+    <Position X="4" Y="0.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>gABsgDIEAEAAsQAgIJAAGAAkIAjBCCgIAAYQAIAAQAA=</HashCode>
+      <FileName>clsConexBd.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibBasica.clsGrid" Collapsed="true">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gIBgACAAAAARAAAAQIAgAgAAAEAAAAAIAAAAAAQAQAA=</HashCode>
+      <FileName>clsGrid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LibBasica.clsParamConBd">
+    <Position X="0.5" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AQAAAgAgQQAAAUARApAAAAAEAAgAAAAAAAAGIAAAEAA=</HashCode>
+      <FileName>clsParamConBd.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ConsultarEmpleado">
+        <s:complexType />
+      </s:element>
+      <s:element name="ConsultarEmpleadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultarEmpleadoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Consultar_Clientes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cedula" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Consultar_ClientesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Consultar_ClientesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Consultar_Factura">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cedula" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Consultar_FacturaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Consultar_FacturaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BIENVENIDOS_A_NUESTRO_WEB_SERVICE">
+        <s:complexType />
+      </s:element>
+      <s:element name="BIENVENIDOS_A_NUESTRO_WEB_SERVICEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BIENVENIDOS_A_NUESTRO_WEB_SERVICEResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DataSet" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:element ref="s:schema" />
+            <s:any />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConsultarEmpleadoSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultarEmpleado" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarEmpleadoSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarEmpleadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Consultar_ClientesSoapIn">
+    <wsdl:part name="parameters" element="tns:Consultar_Clientes" />
+  </wsdl:message>
+  <wsdl:message name="Consultar_ClientesSoapOut">
+    <wsdl:part name="parameters" element="tns:Consultar_ClientesResponse" />
+  </wsdl:message>
+  <wsdl:message name="Consultar_FacturaSoapIn">
+    <wsdl:part name="parameters" element="tns:Consultar_Factura" />
+  </wsdl:message>
+  <wsdl:message name="Consultar_FacturaSoapOut">
+    <wsdl:part name="parameters" element="tns:Consultar_FacturaResponse" />
+  </wsdl:message>
+  <wsdl:message name="BIENVENIDOS_A_NUESTRO_WEB_SERVICESoapIn">
+    <wsdl:part name="parameters" element="tns:BIENVENIDOS_A_NUESTRO_WEB_SERVICE" />
+  </wsdl:message>
+  <wsdl:message name="BIENVENIDOS_A_NUESTRO_WEB_SERVICESoapOut">
+    <wsdl:part name="parameters" element="tns:BIENVENIDOS_A_NUESTRO_WEB_SERVICEResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarEmpleadoHttpGetIn" />
+  <wsdl:message name="ConsultarEmpleadoHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Consultar_ClientesHttpGetIn">
+    <wsdl:part name="cedula" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Consultar_ClientesHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Consultar_FacturaHttpGetIn">
+    <wsdl:part name="cedula" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Consultar_FacturaHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="BIENVENIDOS_A_NUESTRO_WEB_SERVICEHttpGetIn" />
+  <wsdl:message name="BIENVENIDOS_A_NUESTRO_WEB_SERVICEHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarEmpleadoHttpPostIn" />
+  <wsdl:message name="ConsultarEmpleadoHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Consultar_ClientesHttpPostIn">
+    <wsdl:part name="cedula" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Consultar_ClientesHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Consultar_FacturaHttpPostIn">
+    <wsdl:part name="cedula" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Consultar_FacturaHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="BIENVENIDOS_A_NUESTRO_WEB_SERVICEHttpPostIn" />
+  <wsdl:message name="BIENVENIDOS_A_NUESTRO_WEB_SERVICEHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="AgenciaViajeLAB_SCSJSoap">
+    <wsdl:operation name="ConsultarEmpleado">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Consultar nuestro empleados</wsdl:documentation>
+      <wsdl:input message="tns:ConsultarEmpleadoSoapIn" />
+      <wsdl:output message="tns:ConsultarEmpleadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Consultar_Clientes">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Consultar clientes registrados en Agencia Viaje</wsdl:documentation>
+      <wsdl:input message="tns:Consultar_ClientesSoapIn" />
+      <wsdl:output message="tns:Consultar_ClientesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Consultar_Factura">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Consultar factura registrados en Agencia Viaje</wsdl:documentation>
+      <wsdl:input message="tns:Consultar_FacturaSoapIn" />
+      <wsdl:output message="tns:Consultar_FacturaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BIENVENIDOS_A_NUESTRO_WEB_SERVICE">
+      <wsdl:input message="tns:BIENVENIDOS_A_NUESTRO_WEB_SERVICESoapIn" />
+      <wsdl:output message="tns:BIENVENIDOS_A_NUESTRO_WEB_SERVICESoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="AgenciaViajeLAB_SCSJHttpGet">
+    <wsdl:operation name="ConsultarEmpleado">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Consultar nuestro empleados</wsdl:documentation>
+      <wsdl:input message="tns:ConsultarEmpleadoHttpGetIn" />
+      <wsdl:output message="tns:ConsultarEmpleadoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Consultar_Clientes">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Consultar clientes registrados en Agencia Viaje</wsdl:documentation>
+      <wsdl:input message="tns:Consultar_ClientesHttpGetIn" />
+      <wsdl:output message="tns:Consultar_ClientesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Consultar_Factura">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Consultar factura registrados en Agencia Viaje</wsdl:documentation>
+      <wsdl:input message="tns:Consultar_FacturaHttpGetIn" />
+      <wsdl:output message="tns:Consultar_FacturaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BIENVENIDOS_A_NUESTRO_WEB_SERVICE">
+      <wsdl:input message="tns:BIENVENIDOS_A_NUESTRO_WEB_SERVICEHttpGetIn" />
+      <wsdl:output message="tns:BIENVENIDOS_A_NUESTRO_WEB_SERVICEHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="AgenciaViajeLAB_SCSJHttpPost">
+    <wsdl:operation name="ConsultarEmpleado">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Consultar nuestro empleados</wsdl:documentation>
+      <wsdl:input message="tns:ConsultarEmpleadoHttpPostIn" />
+      <wsdl:output message="tns:ConsultarEmpleadoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Consultar_Clientes">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Consultar clientes registrados en Agencia Viaje</wsdl:documentation>
+      <wsdl:input message="tns:Consultar_ClientesHttpPostIn" />
+      <wsdl:output message="tns:Consultar_ClientesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Consultar_Factura">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Consultar factura registrados en Agencia Viaje</wsdl:documentation>
+      <wsdl:input message="tns:Consultar_FacturaHttpPostIn" />
+      <wsdl:output message="tns:Consultar_FacturaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BIENVENIDOS_A_NUESTRO_WEB_SERVICE">
+      <wsdl:input message="tns:BIENVENIDOS_A_NUESTRO_WEB_SERVICEHttpPostIn" />
+      <wsdl:output message="tns:BIENVENIDOS_A_NUESTRO_WEB_SERVICEHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AgenciaViajeLAB_SCSJSoap" type="tns:AgenciaViajeLAB_SCSJSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConsultarEmpleado">
+      <soap:operation soapAction="http://tempuri.org/ConsultarEmpleado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consultar_Clientes">
+      <soap:operation soapAction="http://tempuri.org/Consultar_Clientes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consultar_Factura">
+      <soap:operation soapAction="http://tempuri.org/Consultar_Factura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BIENVENIDOS_A_NUESTRO_WEB_SERVICE">
+      <soap:operation soapAction="http://tempuri.org/BIENVENIDOS_A_NUESTRO_WEB_SERVICE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AgenciaViajeLAB_SCSJSoap12" type="tns:AgenciaViajeLAB_SCSJSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ConsultarEmpleado">
+      <soap12:operation soapAction="http://tempuri.org/ConsultarEmpleado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consultar_Clientes">
+      <soap12:operation soapAction="http://tempuri.org/Consultar_Clientes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consultar_Factura">
+      <soap12:operation soapAction="http://tempuri.org/Consultar_Factura" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BIENVENIDOS_A_NUESTRO_WEB_SERVICE">
+      <soap12:operation soapAction="http://tempuri.org/BIENVENIDOS_A_NUESTRO_WEB_SERVICE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AgenciaViajeLAB_SCSJHttpGet" type="tns:AgenciaViajeLAB_SCSJHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="ConsultarEmpleado">
+      <http:operation location="/ConsultarEmpleado" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consultar_Clientes">
+      <http:operation location="/Consultar_Clientes" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consultar_Factura">
+      <http:operation location="/Consultar_Factura" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BIENVENIDOS_A_NUESTRO_WEB_SERVICE">
+      <http:operation location="/BIENVENIDOS_A_NUESTRO_WEB_SERVICE" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AgenciaViajeLAB_SCSJHttpPost" type="tns:AgenciaViajeLAB_SCSJHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="ConsultarEmpleado">
+      <http:operation location="/ConsultarEmpleado" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consultar_Clientes">
+      <http:operation location="/Consultar_Clientes" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Consultar_Factura">
+      <http:operation location="/Consultar_Factura" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BIENVENIDOS_A_NUESTRO_WEB_SERVICE">
+      <http:operation location="/BIENVENIDOS_A_NUESTRO_WEB_SERVICE" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AgenciaViajeLAB_SCSJ">
+    <wsdl:port name="AgenciaViajeLAB_SCSJSoap" binding="tns:AgenciaViajeLAB_SCSJSoap">
+      <soap:address location="http://agenciaviajeabjsanti.somee.com/AgenciaViajeLAB_SCSJ.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AgenciaViajeLAB_SCSJSoap12" binding="tns:AgenciaViajeLAB_SCSJSoap12">
+      <soap12:address location="http://agenciaviajeabjsanti.somee.com/AgenciaViajeLAB_SCSJ.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AgenciaViajeLAB_SCSJHttpGet" binding="tns:AgenciaViajeLAB_SCSJHttpGet">
+      <http:address location="http://agenciaviajeabjsanti.somee.com/AgenciaViajeLAB_SCSJ.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AgenciaViajeLAB_SCSJHttpPost" binding="tns:AgenciaViajeLAB_SCSJHttpPost">
+      <http:address location="http://agenciaviajeabjsanti.somee.com/AgenciaViajeLAB_SCSJ.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

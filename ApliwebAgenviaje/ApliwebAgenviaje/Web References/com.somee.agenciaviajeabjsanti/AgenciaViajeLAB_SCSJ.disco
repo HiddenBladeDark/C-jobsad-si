@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://agenciaviajeabjsanti.somee.com/AgenciaViajeLAB_SCSJ.asmx?wsdl" docRef="http://agenciaviajeabjsanti.somee.com/AgenciaViajeLAB_SCSJ.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://agenciaviajeabjsanti.somee.com/AgenciaViajeLAB_SCSJ.asmx" xmlns:q1="http://tempuri.org/" binding="q1:AgenciaViajeLAB_SCSJSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://agenciaviajeabjsanti.somee.com/AgenciaViajeLAB_SCSJ.asmx" xmlns:q2="http://tempuri.org/" binding="q2:AgenciaViajeLAB_SCSJSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

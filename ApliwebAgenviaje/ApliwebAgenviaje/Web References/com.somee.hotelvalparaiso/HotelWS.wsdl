@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="InformacionGeneral">
+        <s:complexType />
+      </s:element>
+      <s:element name="InformacionGeneralResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InformacionGeneralResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerFactura">
+        <s:complexType />
+      </s:element>
+      <s:element name="VerFacturaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VerFacturaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerGuias">
+        <s:complexType />
+      </s:element>
+      <s:element name="VerGuiasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VerGuiasResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarServicios">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListarServiciosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarServiciosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarClientes">
+        <s:complexType />
+      </s:element>
+      <s:element name="ListarClientesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarClientesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarGuias">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cod_guia" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarGuiasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarGuiasResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarServicios">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codigo_servicio" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarServiciosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarServiciosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarClientes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id_cliente" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarClientesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarClientesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="InformacionGeneralSoapIn">
+    <wsdl:part name="parameters" element="tns:InformacionGeneral" />
+  </wsdl:message>
+  <wsdl:message name="InformacionGeneralSoapOut">
+    <wsdl:part name="parameters" element="tns:InformacionGeneralResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerFacturaSoapIn">
+    <wsdl:part name="parameters" element="tns:VerFactura" />
+  </wsdl:message>
+  <wsdl:message name="VerFacturaSoapOut">
+    <wsdl:part name="parameters" element="tns:VerFacturaResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerGuiasSoapIn">
+    <wsdl:part name="parameters" element="tns:VerGuias" />
+  </wsdl:message>
+  <wsdl:message name="VerGuiasSoapOut">
+    <wsdl:part name="parameters" element="tns:VerGuiasResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListarServiciosSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarServicios" />
+  </wsdl:message>
+  <wsdl:message name="ListarServiciosSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarServiciosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListarClientesSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarClientes" />
+  </wsdl:message>
+  <wsdl:message name="ListarClientesSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarClientesResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarGuiasSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarGuias" />
+  </wsdl:message>
+  <wsdl:message name="BuscarGuiasSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarGuiasResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarServiciosSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarServicios" />
+  </wsdl:message>
+  <wsdl:message name="BuscarServiciosSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarServiciosResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarClientesSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarClientes" />
+  </wsdl:message>
+  <wsdl:message name="BuscarClientesSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarClientesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="HotelWSSoap">
+    <wsdl:operation name="InformacionGeneral">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Pulsa en informacion general de nuestros servicios del hotel</wsdl:documentation>
+      <wsdl:input message="tns:InformacionGeneralSoapIn" />
+      <wsdl:output message="tns:InformacionGeneralSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerFactura">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Lista de facturacion pagados por clientes que consumen</wsdl:documentation>
+      <wsdl:input message="tns:VerFacturaSoapIn" />
+      <wsdl:output message="tns:VerFacturaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerGuias">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Lista de las servicios que consumen guias</wsdl:documentation>
+      <wsdl:input message="tns:VerGuiasSoapIn" />
+      <wsdl:output message="tns:VerGuiasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarServicios">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Lista de los servicios que ofrecemos a los clientes</wsdl:documentation>
+      <wsdl:input message="tns:ListarServiciosSoapIn" />
+      <wsdl:output message="tns:ListarServiciosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarClientes">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Lista de los clientes que adquirieron de nuestros servicios</wsdl:documentation>
+      <wsdl:input message="tns:ListarClientesSoapIn" />
+      <wsdl:output message="tns:ListarClientesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarGuias">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Consulta de guias ingresando codigo</wsdl:documentation>
+      <wsdl:input message="tns:BuscarGuiasSoapIn" />
+      <wsdl:output message="tns:BuscarGuiasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarServicios">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Consulta de servicio ingresando codigo</wsdl:documentation>
+      <wsdl:input message="tns:BuscarServiciosSoapIn" />
+      <wsdl:output message="tns:BuscarServiciosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarClientes">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Consulta de clientes ingresando identificacion</wsdl:documentation>
+      <wsdl:input message="tns:BuscarClientesSoapIn" />
+      <wsdl:output message="tns:BuscarClientesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="HotelWSSoap" type="tns:HotelWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InformacionGeneral">
+      <soap:operation soapAction="http://tempuri.org/InformacionGeneral" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerFactura">
+      <soap:operation soapAction="http://tempuri.org/VerFactura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerGuias">
+      <soap:operation soapAction="http://tempuri.org/VerGuias" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarServicios">
+      <soap:operation soapAction="http://tempuri.org/ListarServicios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarClientes">
+      <soap:operation soapAction="http://tempuri.org/ListarClientes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarGuias">
+      <soap:operation soapAction="http://tempuri.org/BuscarGuias" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarServicios">
+      <soap:operation soapAction="http://tempuri.org/BuscarServicios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarClientes">
+      <soap:operation soapAction="http://tempuri.org/BuscarClientes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="HotelWSSoap12" type="tns:HotelWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InformacionGeneral">
+      <soap12:operation soapAction="http://tempuri.org/InformacionGeneral" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerFactura">
+      <soap12:operation soapAction="http://tempuri.org/VerFactura" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerGuias">
+      <soap12:operation soapAction="http://tempuri.org/VerGuias" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarServicios">
+      <soap12:operation soapAction="http://tempuri.org/ListarServicios" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarClientes">
+      <soap12:operation soapAction="http://tempuri.org/ListarClientes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarGuias">
+      <soap12:operation soapAction="http://tempuri.org/BuscarGuias" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarServicios">
+      <soap12:operation soapAction="http://tempuri.org/BuscarServicios" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarClientes">
+      <soap12:operation soapAction="http://tempuri.org/BuscarClientes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HotelWS">
+    <wsdl:port name="HotelWSSoap" binding="tns:HotelWSSoap">
+      <soap:address location="http://hotelvalparaiso.somee.com/HotelWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="HotelWSSoap12" binding="tns:HotelWSSoap12">
+      <soap12:address location="http://hotelvalparaiso.somee.com/HotelWS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
